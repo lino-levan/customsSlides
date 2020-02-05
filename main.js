@@ -29,8 +29,11 @@ backButton.addEventListener('click', function() {
 function setText(fwd){
   let text = document.getElementById("text");
 	let body = document.getElementById("body");
-
-  text.innerHTML = slides[current];
+	text.classList.remove("fade");
+	void text.offsetWidth;
+	text.classList.add("fade");
+	setTimeout(()=>{
+	text.innerHTML = slides[current];
 	body.background = "backgrounds/"+images[current];
 	if (fwd){
 		current++;
@@ -40,6 +43,5 @@ function setText(fwd){
 		current--;
 		if(current<0)
 			current=0;
-	}
-
+	}},1000)
 }
