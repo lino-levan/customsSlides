@@ -1,0 +1,15 @@
+button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+.bottomAlign {
+		position:absolute;
+		bottom:5vh;
+}
+
+.scrollable {
+	height:85vh;
+	overflow-y: scroll;
+}
