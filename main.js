@@ -53,19 +53,7 @@ window.onload = function() {
 		event.preventDefault();
 	  setText(false);
 	}, false);
-	addAudio();
 };
-
-function addAudio() {
-	footer = document.getElementById("bottomDiv");
-	var audioPlayer = document.createElement("audio");
-	audioPlayer.controls = true;
-	var srcFile = document.createElement("source");
-	srcFile.setAttribute("src", "fearNoMore.mp3");
-	srcFile.setAttribute("type", "audio/mpeg");
-	audioPlayer.appendChild(srcFile);
-	footer.appendChild(audioPlayer);
-}
 
 function setText(fwd){
   let text = document.getElementById("text");
